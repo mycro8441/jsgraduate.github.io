@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assignment</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="./src/style.css" />
+    </head>
+    <header style="position:fixed; top:0; left:10px; color:black;">
+        <h5>Nomad Javascript Challenge Graduation Project</h5>
+    </header>
+    <body>
+        <div class="boxcontainer swing">
+            <div class="box neonText">
+                <br />
+                <h2 class="center" id="date"></h2>
+                <hr/>
+                <h1 class="center" id="clock">00:00:00</h1>
+
+                <form class="center" id="loginForm">
+                    <input class="loginInput" type="text" required placeholder="Please enter your name here"/>
+                    <br><br>
+                    <input type="submit" value="Log in"/>
+                </form>
+                <h2 class="center hidden" id="userText"></h2>
+            </div>
+            <h5 style="display: inline;">Location and weather</h5>
+            <div class="box lowheight">
+                <div class="weathername">
+                    <h2 style="display: inline; font-size:50px; margin-left: 15px;" align="center" class="whetherText" id="name"></h2>
+                    <hr>
+                    <h3 style="display: inline; margin-left: 20px; font-size:30px;" id="weather"></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="box swing todo">
+            <h1 class="center">To-Do list</h1>
+            <hr>
+            <form class="center" id="todo-form">
+                <input type="text" placeholder="Write a To Do and Press Enter" required/>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+
+        <script src="src/clock.js"></script>
+        <script src="src/login.js"></script>
+        <script src="src/weather.js"></script>
+        <script src="src/background.js"></script>
+        <script src="src/todo.js"></script>
+    </body>
+    <footer>
+        <div class="quote" id="quoteText">
+            <span></span><br>
+            <span></span>
+        </div>
+        <script src="src/quote.js"></script>
+    </footer>
+</html>
